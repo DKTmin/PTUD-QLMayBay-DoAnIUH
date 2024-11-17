@@ -27,15 +27,20 @@ public class GUI_HangVe extends javax.swing.JPanel {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
         jButton1.setText("Hạng Vé");
         add(jButton1, java.awt.BorderLayout.CENTER);
+
+        jLabel1.setText("QUẢN LÝ HẠNG VÉ");
+        add(jLabel1, java.awt.BorderLayout.PAGE_START);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
