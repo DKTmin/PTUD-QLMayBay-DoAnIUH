@@ -5,6 +5,8 @@
 package GUI;
 
 import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  *
@@ -13,7 +15,7 @@ import javax.swing.JFrame;
 public class Run {
 
     public static void main(String[] args) {
-        GUI_HOME a = new GUI_HOME();
+        GUI_HOME_QuanLy a = new GUI_HOME_QuanLy();
         a.setVisible(true);
         a.setExtendedState(JFrame.MAXIMIZED_BOTH);
         a.setUndecorated(true);
