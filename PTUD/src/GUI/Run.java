@@ -27,10 +27,10 @@ public class Run {
 //        a.setUndecorated(true);
 //        a.setVisible(true);
 //      
-        GUI_DangNhap a = new GUI_DangNhap(); 
-        a.setVisible(true);
-        a.setResizable(false);
-        a.setLocationRelativeTo(null);
+//        GUI_DangNhap a = new GUI_DangNhap(); 
+//        a.setVisible(true);
+//        a.setResizable(false);
+//        a.setLocationRelativeTo(null);
         
     	
 //    	DAO_LoaiTaiKhoan dao_ltk = new DAO_LoaiTaiKhoan(); 
