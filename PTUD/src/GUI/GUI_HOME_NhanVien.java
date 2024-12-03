@@ -32,7 +32,7 @@ public class GUI_HOME_NhanVien extends javax.swing.JFrame {
         guiHangBay = new GUI_HangBay(); 
         
         initComponents();
-        this.panelThayDoi.add(guiNhapVe);
+        this.panelThayDoi.add(guiDatVe);
     }
 
     /**

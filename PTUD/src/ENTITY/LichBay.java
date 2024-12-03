@@ -1,14 +1,14 @@
 package ENTITY;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class LichBay {
 	private String MaLichBay; 
 	private String NoiDi; 
 	private String NoiDen; 
-	private LocalDate ThoiGianDi; 
-	private LocalDate ThoiGianDen;
+	private LocalDateTime ThoiGianDi; 
+	private LocalDateTime ThoiGianDen;
 	
 	
 	
@@ -19,7 +19,7 @@ public class LichBay {
 
 
 
-	public LichBay(String maLichBay, String noiDi, String noiDen, LocalDate thoiGianDi, LocalDate thoiGianDen) {
+	public LichBay(String maLichBay, String noiDi, String noiDen, LocalDateTime thoiGianDi, LocalDateTime thoiGianDen) {
 		super();
 		MaLichBay = maLichBay;
 		NoiDi = noiDi;
@@ -67,25 +67,25 @@ public class LichBay {
 
 
 
-	public LocalDate getThoiGianDi() {
+	public LocalDateTime getThoiGianDi() {
 		return ThoiGianDi;
 	}
 
 
 
-	public void setThoiGianDi(LocalDate thoiGianDi) {
+	public void setThoiGianDi(LocalDateTime thoiGianDi) {
 		ThoiGianDi = thoiGianDi;
 	}
 
 
 
-	public LocalDate getThoiGianDen() {
+	public LocalDateTime getThoiGianDen() {
 		return ThoiGianDen;
 	}
 
 
 
-	public void setThoiGianDen(LocalDate thoiGianDen) {
+	public void setThoiGianDen(LocalDateTime thoiGianDen) {
 		ThoiGianDen = thoiGianDen;
 	}
 
@@ -108,6 +108,14 @@ public class LichBay {
 			return false;
 		LichBay other = (LichBay) obj;
 		return Objects.equals(MaLichBay, other.MaLichBay);
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "LichBay [MaLichBay=" + MaLichBay + ", NoiDi=" + NoiDi + ", NoiDen=" + NoiDen + ", ThoiGianDi="
+				+ ThoiGianDi + ", ThoiGianDen=" + ThoiGianDen + "]";
 	} 
 	
 	
