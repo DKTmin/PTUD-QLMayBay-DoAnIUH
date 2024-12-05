@@ -26,6 +26,8 @@ import ENTITY.VeMayBay;
  */
 public class Run {
     public static void main(String[] args) {
+
+//      
 //        GUI_HOME_QuanLy a = new GUI_HOME_QuanLy();
 //        a.setExtendedState(JFrame.MAXIMIZED_BOTH);
 //        a.setVisible(true);
@@ -71,9 +73,5 @@ public class Run {
 //    	DAO_Ghe dao_ghe = new DAO_Ghe();   
 //    	dao_ghe.getalltbGhe(); 
 //    	System.out.println(dao_ghe.in());
-    	
- 
-       
-        
     }
 }
