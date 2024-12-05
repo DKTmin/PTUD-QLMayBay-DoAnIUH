@@ -68,8 +68,6 @@ public class GUI_HOME_NhanVien extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(25, 145, 166));
         jPanel1.setPreferredSize(new java.awt.Dimension(379, 649));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Documents\\NetBeansProjects\\ChuongTrinhVeMayBay\\anh\\userTT.png")); // NOI18N
-
         jlbChucVu.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jlbChucVu.setForeground(new java.awt.Color(255, 255, 255));
         jlbChucVu.setText("Nhân Viên");
@@ -88,7 +86,6 @@ public class GUI_HOME_NhanVien extends javax.swing.JFrame {
         btnNhapVe.setBackground(new java.awt.Color(25, 145, 166));
         btnNhapVe.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btnNhapVe.setForeground(new java.awt.Color(255, 255, 255));
-        btnNhapVe.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Documents\\NetBeansProjects\\ChuongTrinhVeMayBay\\anh\\NhapVe.png")); // NOI18N
         btnNhapVe.setText("    Nhập Vé");
         btnNhapVe.setBorder(null);
         btnNhapVe.addActionListener(new java.awt.event.ActionListener() {
@@ -101,7 +98,6 @@ public class GUI_HOME_NhanVien extends javax.swing.JFrame {
         btnDatVe.setBackground(new java.awt.Color(25, 145, 166));
         btnDatVe.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btnDatVe.setForeground(new java.awt.Color(255, 255, 255));
-        btnDatVe.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Documents\\NetBeansProjects\\ChuongTrinhVeMayBay\\anh\\DatVe.png")); // NOI18N
         btnDatVe.setText("    Đặt Vé");
         btnDatVe.setBorder(null);
         btnDatVe.addActionListener(new java.awt.event.ActionListener() {
@@ -114,7 +110,6 @@ public class GUI_HOME_NhanVien extends javax.swing.JFrame {
         btnKhachHang.setBackground(new java.awt.Color(25, 145, 166));
         btnKhachHang.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btnKhachHang.setForeground(new java.awt.Color(255, 255, 255));
-        btnKhachHang.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Documents\\NetBeansProjects\\ChuongTrinhVeMayBay\\anh\\KhachHang.png")); // NOI18N
         btnKhachHang.setText("    Khách Hàng");
         btnKhachHang.setBorder(null);
         btnKhachHang.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +122,6 @@ public class GUI_HOME_NhanVien extends javax.swing.JFrame {
         btnHangVe.setBackground(new java.awt.Color(25, 145, 166));
         btnHangVe.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btnHangVe.setForeground(new java.awt.Color(255, 255, 255));
-        btnHangVe.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Documents\\NetBeansProjects\\ChuongTrinhVeMayBay\\anh\\HangVe.png")); // NOI18N
         btnHangVe.setText("    Hạng Vé");
         btnHangVe.setBorder(null);
         btnHangVe.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +134,6 @@ public class GUI_HOME_NhanVien extends javax.swing.JFrame {
         btnHangBay.setBackground(new java.awt.Color(25, 145, 166));
         btnHangBay.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btnHangBay.setForeground(new java.awt.Color(255, 255, 255));
-        btnHangBay.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Documents\\NetBeansProjects\\ChuongTrinhVeMayBay\\anh\\HangBay.png")); // NOI18N
         btnHangBay.setText("    Hãng Bay");
         btnHangBay.setBorder(null);
         btnHangBay.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +157,7 @@ public class GUI_HOME_NhanVien extends javax.swing.JFrame {
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jlbChucVu)))
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addContainerGap(134, Short.MAX_VALUE))
             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(

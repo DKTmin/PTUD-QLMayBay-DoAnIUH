@@ -80,7 +80,7 @@
                           <Component id="jlbChucVu" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="131" max="32767" attributes="0"/>
+                  <EmptySpace pref="134" max="32767" attributes="0"/>
               </Group>
               <Component id="jPanel2" alignment="1" max="32767" attributes="0"/>
           </Group>
@@ -110,11 +110,6 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ADMIN\Documents\NetBeansProjects\ChuongTrinhVeMayBay\anh\userTT.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jlbChucVu">
           <Properties>
@@ -172,9 +167,6 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\ADMIN\Documents\NetBeansProjects\ChuongTrinhVeMayBay\anh\NhapVe.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="    Nh&#x1ead;p V&#xe9;"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -194,9 +186,6 @@
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\ADMIN\Documents\NetBeansProjects\ChuongTrinhVeMayBay\anh\DatVe.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="    &#x110;&#x1eb7;t V&#xe9;"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -218,9 +207,6 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\ADMIN\Documents\NetBeansProjects\ChuongTrinhVeMayBay\anh\KhachHang.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="    Kh&#xe1;ch H&#xe0;ng"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -241,9 +227,6 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\ADMIN\Documents\NetBeansProjects\ChuongTrinhVeMayBay\anh\HangVe.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="    H&#x1ea1;ng V&#xe9;"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -263,9 +246,6 @@
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\ADMIN\Documents\NetBeansProjects\ChuongTrinhVeMayBay\anh\HangBay.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="    H&#xe3;ng Bay"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">

@@ -64,6 +64,7 @@ public class KetNoiDB {
 
             // Đóng kết nối
             ketNoiDB.disconnect();
+            
         } catch (SQLException e) {
             System.out.println("Lỗi xảy ra: " + e.getMessage());
             e.printStackTrace();
