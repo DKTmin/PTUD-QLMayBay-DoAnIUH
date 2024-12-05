@@ -21,11 +21,11 @@ import ENTITY.VeMayBay;
  */
 public class Run {
     public static void main(String[] args) {
-//        GUI_HOME_QuanLy a = new GUI_HOME_QuanLy();
-//        a.setVisible(true);
-//        a.setExtendedState(JFrame.MAXIMIZED_BOTH);
-//        a.setUndecorated(true);
-//        a.setVisible(true);
+        GUI_HOME_QuanLy a = new GUI_HOME_QuanLy();
+        a.setVisible(true);
+        a.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        a.setUndecorated(true);
+        a.setVisible(true);
 //      
 //        GUI_DangNhap a = new GUI_DangNhap(); 
 //        a.setVisible(true);
