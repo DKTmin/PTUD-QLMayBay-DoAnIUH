@@ -54,7 +54,7 @@ CREATE TABLE LichBay (
 -- Bảng HangVe
 CREATE TABLE HangVe	 (
     MaHangVe VARCHAR(50) PRIMARY KEY,
-    TenHangBay NVARCHAR(100)
+    TenHangVe NVARCHAR(100)
 );
 
 -- Bảng HangBay
@@ -142,9 +142,9 @@ CREATE TABLE ChiTietVe (
 -- Thêm dữ liệu vào bảng LoaiTaiKhoan
 INSERT INTO LoaiTaiKhoan (MaLoai, TenLoai) 
 VALUES 
-('LTK001', 'Admin'), 
-('LTK002', 'Nhân viên'), 
-('LTK003', 'Khách hàng');
+('LTK001', N'Admin'), 
+('LTK002', N'Nhân viên'), 
+('LTK003', N'Khách hàng');
 GO
 
 -- Thêm dữ liệu vào bảng TaiKhoan
@@ -160,36 +160,36 @@ GO
 -- Thêm dữ liệu vào bảng NhanVien
 INSERT INTO NhanVien (MaNhanVien, TenNhanVien, Email, DiaChi, SoDienThoai, GioiTinh, HinhAnh, MaTaiKhoan)
 VALUES 
-('NV001', 'Nguyễn Văn A', 'a@gmail.com', 'Hà Nội', '0901234567', 'Nam', '', 'TK002'),
-('NV002', 'Trần Thị B', 'b@gmail.com', 'Hồ Chí Minh', '0902345678', 'Nữ', '', 'TK003');
+('NV001', N'Nguyễn Văn A', 'a@gmail.com', N'Hà Nội', '0901234567', 'Nam', '', 'TK002'),
+('NV002', N'Trần Thị B', 'b@gmail.com', N'Hồ Chí Minh', '0902345678', 'Nữ', '', 'TK003');
 GO
 
 -- Thêm dữ liệu vào bảng KhachHang
 INSERT INTO KhachHang (MaKhachHang, TenKhachHang, SoDienThoai, Email, GioiTinh, ChungMinhNhanDan) 
 VALUES 
-('KH001', 'Nguyễn Văn C', '0912345678', 'c@gmail.com', 'Nam', '123456789'),
-('KH002', 'Trần Thị D', '0923456789', 'd@gmail.com', 'Nữ', '987654321');
+('KH001', N'Nguyễn Văn C', '0912345678', 'c@gmail.com', N'Nam', '123456789'),
+('KH002', N'Trần Thị D', '0923456789', 'd@gmail.com', N'Nữ', '987654321');
 GO
 
 -- Thêm dữ liệu vào bảng LichBay
 INSERT INTO LichBay (MaLichBay, NoiDi, NoiDen, ThoiGianDi, ThoiGianDen)
 VALUES 
-('LB001', 'Hà Nội', 'Hồ Chí Minh', '2024-11-20 08:00', '2024-11-20 10:00'),
-('LB002', 'Hồ Chí Minh', 'Đà Nẵng', '2024-11-21 15:00', '2024-11-21 16:30');
+('LB001', N'Hà Nội', N'Hồ Chí Minh', '2024-11-20 08:00', '2024-11-20 10:00'),
+('LB002', N'Hồ Chí Minh', N'Đà Nẵng', '2024-11-21 15:00', '2024-11-21 16:30');
 GO
 
 -- Thêm dữ liệu vào bảng HangVe
 INSERT INTO HangVe (MaHangVe, TenHangBay)
 VALUES 
-('HV001', 'Thương gia'), 
-('HV002', 'Phổ thông');
+('HV001', N'Thương gia'), 
+('HV002', N'Phổ thông');
 GO
 
 -- Thêm dữ liệu vào bảng HangBay
 INSERT INTO HangBay (MaHangBay, TenHangBay, QuocGia, HinhAnh) 
 VALUES 
-('HB001', 'Vietnam Airlines', 'Việt Nam', ''),
-('HB002', 'VietJet Air', 'Việt Nam', '');
+('HB001', 'Vietnam Airlines', N'Việt Nam', ''),
+('HB002', 'VietJet Air', N'Việt Nam', '');
 GO
 
 -- Thêm dữ liệu vào bảng VeMayBay
@@ -216,16 +216,16 @@ GO
 -- Thêm dữ liệu vào bảng LoaiVe
 INSERT INTO LoaiVe (MaLoaiVe, TenLoaiVe)
 VALUES 
-('LV001', 'Khứ hồi'), 
-('LV002', 'Một chiều');
+('LV001', N'Khứ hồi'), 
+('LV002', N'Một chiều');
 GO
 
 -- Thêm dữ liệu vào bảng Ghe
 INSERT INTO Ghe (MaGhe, TenGhe)
 VALUES 
-('G001', 'Ghế 1A'), 
-('G002', 'Ghế 1B'), 
-('G003', 'Ghế 2A');
+('G001', N'Cạnh Đường'), 
+('G002', N'Cạnh Đường'), 
+('G003', N'Cạnh Đường');
 GO
 
 -- Thêm dữ liệu vào bảng TrangThaiGhe
@@ -241,4 +241,363 @@ VALUES
 ('TTG001', 'LV001', 'KH001', 'NV001'),
 ('TTG002', 'LV002', 'KH002', 'NV002');
 GO
+
+
+-------------------------------------------------------------
+-- Thêm Hãng Bay
+INSERT INTO HangBay (MaHangBay, TenHangBay, QuocGia, HinhAnh)
+VALUES
+('HB003', 'Bamboo Airways', N'Việt Nam', ''),
+('HB004', 'Pacific Airlines', N'Việt Nam', ''),
+('HB005', 'AirAsia', 'Malaysia', ''),
+('HB006', 'Singapore Airlines', N'Singapore', ''),
+('HB007', 'Thai Airways', N'Thái Lan', ''),
+('HB008', 'Cathay Pacific', N'Hồng Kông', ''),
+('HB009', 'Qatar Airways', N'Qatar', '');
+GO
+
+-- Thêm lịch bay
+INSERT INTO LichBay (MaLichBay, NoiDi, NoiDen, ThoiGianDi, ThoiGianDen)
+VALUES
+('LB003', N'Đà Nẵng', N'Hà Nội', '2024-11-22 09:00', '2024-11-22 11:00'),
+('LB004', N'Hà Nội', N'Phú Quốc', '2024-11-23 07:30', '2024-11-23 10:00'),
+('LB005', N'Phú Quốc', N'Hồ Chí Minh', '2024-11-24 14:00', '2024-11-24 15:30'),
+('LB006', N'Hồ Chí Minh', N'Hải Phòng', '2024-11-25 13:00', '2024-11-25 15:00'),
+('LB007', N'Hải Phòng', N'Đà Lạt', '2024-11-26 16:00', '2024-11-26 18:00'),
+('LB008', N'Đà Lạt', N'Hà Nội', '2024-11-27 12:30', '2024-11-27 15:00'),
+('LB009', N'Hà Nội', N'Hồ Chí Minh', '2024-11-28 19:00', '2024-11-28 21:00');
+GO
+
+-- Thêm Vé Máy Bay
+INSERT INTO VeMayBay (MaVe, MaHangBay, MaLichBay, MaHangVe, Gia)
+VALUES 
+('VE003', 'HB003', 'LB003', 'HV001', 1500000),
+('VE004', 'HB004', 'LB004', 'HV002', 1800000),
+('VE005', 'HB005', 'LB005', 'HV001', 1200000),
+('VE006', 'HB006', 'LB006', 'HV001', 2500000),
+('VE007', 'HB007', 'LB007', 'HV002', 2200000),
+('VE008', 'HB008', 'LB008', 'HV001', 1900000),
+('VE009', 'HB009', 'LB009', 'HV001', 2700000);
+GO
+
+-- Thêm Ghế 
+INSERT INTO Ghe (MaGhe, TenGhe)
+VALUES 
+('G004', N'Cạnh Đường'), 
+('G005', N'Cạnh Đường'), 
+('G006', N'Cạnh Đường');
+GO
+
+-- Thêm Ghế Kiểu mới 
+INSERT INTO Ghe (MaGhe, TenGhe)
+VALUES 
+-- Thương gia
+('A001', N'Thương Gia'), 
+('A002', N'Thương Gia'), 
+('B001', N'Thương Gia'),
+('B002', N'Thương Gia'), 
+('C001', N'Thương Gia'), 
+('C002', N'Thương Gia'), 
+('D001', N'Thương Gia'),
+('D002', N'Thương Gia'), 
+-- Phổng thông
+('I001', N'Cạnh Cửa'),
+('I002', N'Cạnh Cửa'),
+('I003', N'Cạnh Cửa'),
+('I004', N'Cạnh Cửa'),
+('I005', N'Cạnh Cửa'),
+('I006', N'Cạnh Cửa'),
+('I007', N'Cạnh Cửa'),
+('I008', N'Cạnh Cửa'),
+('I009', N'Cạnh Cửa'),
+('I010', N'Cạnh Cửa'),
+('I011', N'Cạnh Cửa'),
+('I012', N'Cạnh Cửa'),
+('I013', N'Cạnh Cửa'),
+('I014', N'Cạnh Cửa'),
+('I015', N'Cạnh Cửa'),
+('I016', N'Cạnh Cửa'),
+('I017', N'Cạnh Cửa'),
+('I018', N'Cạnh Cửa'),
+('I019', N'Cạnh Cửa'),
+('I020', N'Cạnh Cửa'),
+('I021', N'Cạnh Cửa'),
+('I022', N'Cạnh Cửa'),
+('I023', N'Cạnh Cửa'),
+('I024', N'Cạnh Cửa'),
+('I025', N'Cạnh Cửa'),
+('I026', N'Cạnh Cửa'),
+('I027', N'Cạnh Cửa'),
+('I028', N'Cạnh Cửa'),
+('I029', N'Cạnh Cửa'),
+('I030', N'Cạnh Cửa'),
+('I031', N'Cạnh Cửa'),
+('I032', N'Cạnh Cửa'),
+('I033', N'Cạnh Cửa'),
+('I034', N'Cạnh Cửa'),
+('I035', N'Cạnh Cửa'),
+('I036', N'Cạnh Cửa'),
+('I037', N'Cạnh Cửa'),
+('I038', N'Cạnh Cửa'),
+('I039', N'Cạnh Cửa'),
+('I040', N'Cạnh Cửa'),
+('I041', N'Cạnh Cửa'),
+('I042', N'Cạnh Cửa'),
+('I043', N'Cạnh Cửa'),
+('I044', N'Cạnh Cửa'),
+('I045', N'Cạnh Cửa'),
+('I046', N'Cạnh Cửa'),
+('I047', N'Cạnh Cửa'),
+('I048', N'Cạnh Cửa'),
+('I049', N'Cạnh Cửa'),
+('I050', N'Cạnh Cửa'),
+('E001', N'Cạnh Cửa'),
+('E002', N'Cạnh Cửa'),
+('E003', N'Cạnh Cửa'),
+('E004', N'Cạnh Cửa'),
+('E005', N'Cạnh Cửa'),
+('E006', N'Cạnh Cửa'),
+('E007', N'Cạnh Cửa'),
+('E008', N'Cạnh Cửa'),
+('E009', N'Cạnh Cửa'),
+('E010', N'Cạnh Cửa'),
+('E011', N'Cạnh Cửa'),
+('E012', N'Cạnh Cửa'),
+('E013', N'Cạnh Cửa'),
+('E014', N'Cạnh Cửa'),
+('E015', N'Cạnh Cửa'),
+('E016', N'Cạnh Cửa'),
+('E017', N'Cạnh Cửa'),
+('E018', N'Cạnh Cửa'),
+('E019', N'Cạnh Cửa'),
+('E020', N'Cạnh Cửa'),
+('E021', N'Cạnh Cửa'),
+('E022', N'Cạnh Cửa'),
+('E023', N'Cạnh Cửa'),
+('E024', N'Cạnh Cửa'),
+('E025', N'Cạnh Cửa'),
+('E026', N'Cạnh Cửa'),
+('E027', N'Cạnh Cửa'),
+('E028', N'Cạnh Cửa'),
+('E029', N'Cạnh Cửa'),
+('E030', N'Cạnh Cửa'),
+('E031', N'Cạnh Cửa'),
+('E032', N'Cạnh Cửa'),
+('E033', N'Cạnh Cửa'),
+('E034', N'Cạnh Cửa'),
+('E035', N'Cạnh Cửa'),
+('E036', N'Cạnh Cửa'),
+('E037', N'Cạnh Cửa'),
+('E038', N'Cạnh Cửa'),
+('E039', N'Cạnh Cửa'),
+('E040', N'Cạnh Cửa'),
+('E041', N'Cạnh Cửa'),
+('E042', N'Cạnh Cửa'),
+('E043', N'Cạnh Cửa'),
+('E044', N'Cạnh Cửa'),
+('E045', N'Cạnh Cửa'),
+('E046', N'Cạnh Cửa'),
+('E047', N'Cạnh Cửa'),
+('E048', N'Cạnh Cửa'),
+('E049', N'Cạnh Cửa'),
+('E050', N'Cạnh Cửa'),
+('F001', N'Giữa'),
+('F002', N'Giữa'),
+('F003', N'Giữa'),
+('F004', N'Giữa'),
+('F005', N'Giữa'),
+('F006', N'Giữa'),
+('F007', N'Giữa'),
+('F008', N'Giữa'),
+('F009', N'Giữa'),
+('F010', N'Giữa'),
+('F011', N'Giữa'),
+('F012', N'Giữa'),
+('F013', N'Giữa'),
+('F014', N'Giữa'),
+('F015', N'Giữa'),
+('F016', N'Giữa'),
+('F017', N'Giữa'),
+('F018', N'Giữa'),
+('F019', N'Giữa'),
+('F020', N'Giữa'),
+('F021', N'Giữa'),
+('F022', N'Giữa'),
+('F023', N'Giữa'),
+('F024', N'Giữa'),
+('F025', N'Giữa'),
+('F026', N'Giữa'),
+('F027', N'Giữa'),
+('F028', N'Giữa'),
+('F029', N'Giữa'),
+('F030', N'Giữa'),
+('F031', N'Giữa'),
+('F032', N'Giữa'),
+('F033', N'Giữa'),
+('F034', N'Giữa'),
+('F035', N'Giữa'),
+('F036', N'Giữa'),
+('F037', N'Giữa'),
+('F038', N'Giữa'),
+('F039', N'Giữa'),
+('F040', N'Giữa'),
+('F041', N'Giữa'),
+('F042', N'Giữa'),
+('F043', N'Giữa'),
+('F044', N'Giữa'),
+('F045', N'Giữa'),
+('F046', N'Giữa'),
+('F047', N'Giữa'),
+('F048', N'Giữa'),
+('F049', N'Giữa'),
+('F050', N'Giữa'),
+
+('G007', N'Cạnh Đường'),
+('G008', N'Cạnh Đường'),
+('G009', N'Cạnh Đường'),
+('G010', N'Cạnh Đường'),
+('G011', N'Cạnh Đường'),
+('G012', N'Cạnh Đường'),
+('G013', N'Cạnh Đường'),
+('G014', N'Cạnh Đường'),
+('G015', N'Cạnh Đường'),
+('G016', N'Cạnh Đường'),
+('G017', N'Cạnh Đường'),
+('G018', N'Cạnh Đường'),
+('G019', N'Cạnh Đường'),
+('G020', N'Cạnh Đường'),
+('G021', N'Cạnh Đường'),
+('G022', N'Cạnh Đường'),
+('G023', N'Cạnh Đường'),
+('G024', N'Cạnh Đường'),
+('G025', N'Cạnh Đường'),
+('G026', N'Cạnh Đường'),
+('G027', N'Cạnh Đường'),
+('G028', N'Cạnh Đường'),
+('G029', N'Cạnh Đường'),
+('G030', N'Cạnh Đường'),
+('G031', N'Cạnh Đường'),
+('G032', N'Cạnh Đường'),
+('G033', N'Cạnh Đường'),
+('G034', N'Cạnh Đường'),
+('G035', N'Cạnh Đường'),
+('G036', N'Cạnh Đường'),
+('G037', N'Cạnh Đường'),
+('G038', N'Cạnh Đường'),
+('G039', N'Cạnh Đường'),
+('G040', N'Cạnh Đường'),
+('G041', N'Cạnh Đường'),
+('G042', N'Cạnh Đường'),
+('G043', N'Cạnh Đường'),
+('G044', N'Cạnh Đường'),
+('G045', N'Cạnh Đường'),
+('G046', N'Cạnh Đường'),
+('G047', N'Cạnh Đường'),
+('G048', N'Cạnh Đường'),
+('G049', N'Cạnh Đường'),
+('G050', N'Cạnh Đường'),
+('H001', N'Cạnh Đường'),
+('H002', N'Cạnh Đường'),
+('H003', N'Cạnh Đường'),
+('H004', N'Cạnh Đường'),
+('H005', N'Cạnh Đường'),
+('H006', N'Cạnh Đường'),
+('H007', N'Cạnh Đường'),
+('H008', N'Cạnh Đường'),
+('H009', N'Cạnh Đường'),
+('H010', N'Cạnh Đường'),
+('H011', N'Cạnh Đường'),
+('H012', N'Cạnh Đường'),
+('H013', N'Cạnh Đường'),
+('H014', N'Cạnh Đường'),
+('H015', N'Cạnh Đường'),
+('H016', N'Cạnh Đường'),
+('H017', N'Cạnh Đường'),
+('H018', N'Cạnh Đường'),
+('H019', N'Cạnh Đường'),
+('H020', N'Cạnh Đường'),
+('H021', N'Cạnh Đường'),
+('H022', N'Cạnh Đường'),
+('H023', N'Cạnh Đường'),
+('H024', N'Cạnh Đường'),
+('H025', N'Cạnh Đường'),
+('H026', N'Cạnh Đường'),
+('H027', N'Cạnh Đường'),
+('H028', N'Cạnh Đường'),
+('H029', N'Cạnh Đường'),
+('H030', N'Cạnh Đường'),
+('H031', N'Cạnh Đường'),
+('H032', N'Cạnh Đường'),
+('H033', N'Cạnh Đường'),
+('H034', N'Cạnh Đường'),
+('H035', N'Cạnh Đường'),
+('H036', N'Cạnh Đường'),
+('H037', N'Cạnh Đường'),
+('H038', N'Cạnh Đường'),
+('H039', N'Cạnh Đường'),
+('H040', N'Cạnh Đường'),
+('H041', N'Cạnh Đường'),
+('H042', N'Cạnh Đường'),
+('H043', N'Cạnh Đường'),
+('H044', N'Cạnh Đường'),
+('H045', N'Cạnh Đường'),
+('H046', N'Cạnh Đường'),
+('H047', N'Cạnh Đường'),
+('H048', N'Cạnh Đường'),
+('H049', N'Cạnh Đường'),
+('H050', N'Cạnh Đường'),
+('K001', N'Giữa'),
+('K002', N'Giữa'),
+('K003', N'Giữa'),
+('K004', N'Giữa'),
+('K005', N'Giữa'),
+('K006', N'Giữa'),
+('K007', N'Giữa'),
+('K008', N'Giữa'),
+('K009', N'Giữa'),
+('K010', N'Giữa'),
+('K011', N'Giữa'),
+('K012', N'Giữa'),
+('K013', N'Giữa'),
+('K014', N'Giữa'),
+('K015', N'Giữa'),
+('K016', N'Giữa'),
+('K017', N'Giữa'),
+('K018', N'Giữa'),
+('K019', N'Giữa'),
+('K020', N'Giữa'),
+('K021', N'Giữa'),
+('K022', N'Giữa'),
+('K023', N'Giữa'),
+('K024', N'Giữa'),
+('K025', N'Giữa'),
+('K026', N'Giữa'),
+('K027', N'Giữa'),
+('K028', N'Giữa'),
+('K029', N'Giữa'),
+('K030', N'Giữa'),
+('K031', N'Giữa'),
+('K032', N'Giữa'),
+('K033', N'Giữa'),
+('K034', N'Giữa'),
+('K035', N'Giữa'),
+('K036', N'Giữa'),
+('K037', N'Giữa'),
+('K038', N'Giữa'),
+('K039', N'Giữa'),
+('K040', N'Giữa'),
+('K041', N'Giữa'),
+('K042', N'Giữa'),
+('K043', N'Giữa'),
+('K044', N'Giữa'),
+('K045', N'Giữa'),
+('K046', N'Giữa'),
+('K047', N'Giữa'),
+('K048', N'Giữa'),
+('K049', N'Giữa'),
+('K050', N'Giữa');
+
+GO
+
+
 

@@ -3,11 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/PTUD-QLMayBay/PTUD/src/GUI/GUI_DatVe.java</file>
             <file>file:/D:/PTUD-QLMayBay/PTUD/src/GUI/Run.java</file>
-            <file>file:/D:/PTUD-QLMayBay/PTUD/src/ENTITY/ChiTietHoaDon.java</file>
-            <file>file:/D:/PTUD-QLMayBay/PTUD/src/ENTITY/ChiTietVe.java</file>
-            <file>file:/D:/PTUD-QLMayBay/PTUD/src/Connect/KetNoiDB.java</file>
-            <file>file:/D:/PTUD-QLMayBay/PTUD/src/GUI/GUI_DangNhap.java</file>
+            <file>file:/D:/PTUD-QLMayBay/PTUD/src/GUI/GUI_ChonVe.java</file>
         </group>
     </open-files>
 </project-private>

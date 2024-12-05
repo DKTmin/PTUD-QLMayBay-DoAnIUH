@@ -33,7 +33,7 @@ public class GUI_HOME_NhanVien extends javax.swing.JFrame {
  
         
         initComponents();
-        this.panelThayDoi.add(guiNhapVe);
+        this.panelThayDoi.add(guiDatVe);
     }
 
     /**
